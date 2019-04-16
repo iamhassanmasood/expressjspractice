@@ -4,11 +4,26 @@ const PORT = 4000;
 
 
 app.get('/', (req, res)=>{
-    res.send("<h1>Hello Home Page </h1>")
+    res.send("<h1>Welcome Page </h1>")
 })
+
+/*
 app.use((req, res)=>{
     res.status(404).send("<h1>Error 404 </h1> <br/> <h2> Sorry Dear You are on wrong place in right time</h2>")
 })
+*/
+
+
+app.use('/add-prod', (req, res)=>{
+    res.send('<form action="/book" method="POST"><input type="text" name="title" /> <button type="submit" >Add Book</button></form>')
+})
+app.get('/home', (req, res)=>{
+    res.send("<h1>Hello from Home Page </h1>")
+})
+app.use('/book', (req, res, next)=>{
+    res.redirect('/')
+})
+
 app.listen(PORT, ()=>{
     console.log(`App is running on ${PORT}`)
 })
