@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const bodyParser= require('body-parser');
 const PORT = 4000;
 
 
@@ -21,6 +22,7 @@ app.get('/home', (req, res)=>{
     res.send("<h1>Hello from Home Page </h1>")
 })
 app.use('/book', (req, res, next)=>{
+    console.log(req.body)
     res.redirect('/')
 })
 
