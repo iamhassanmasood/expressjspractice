@@ -3,6 +3,7 @@ const app = express();
 const bodyParser= require('body-parser');
 const PORT = 4000;
 
+app.use(bodyParser.urlencoded());
 
 app.get('/', (req, res)=>{
     res.send("<h1>Welcome Page </h1>")
