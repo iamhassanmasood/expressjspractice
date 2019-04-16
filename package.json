@@ -1,0 +1,20 @@
+{
+  "name": "expresss",
+  "version": "1.0.0",
+  "description": "\"Lab one node\"",
+  "main": "app.js",
+  "scripts": {
+    "start": "if [$NODE_ENV == 'development']; then node app.js; else nodemon app.js; fi",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "mustache": "^3.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
