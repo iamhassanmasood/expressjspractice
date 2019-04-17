@@ -45,6 +45,10 @@ body{
     border-radius: 5px;
     width:15rem;
 }
+.form-group input:hover{
+    cursor:pointer;
+    border:2px solid green;
+}
 button{
     margin:1rem 0;
     border: 1px solid greenyellow;
@@ -54,7 +58,7 @@ button{
 }
 .form-group button:hover{
     border:1px solid #658814;
-    background-color: #47020c1f;
+    background: #537795;
     color:white
 }
 .product-form{
