@@ -3,11 +3,11 @@ const app = express();
 const path =require('path');
 const bodyParser= require('body-parser');
 const adminData = require('./routes/admin');
-const products=require('./routes/admin')
 const shopRoutes = require('./routes/shop');
 const errRoutes = require('./routes/error');
 const PORT = 3000;
 
+app.set();
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 

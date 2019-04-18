@@ -33,6 +33,6 @@ body{
     .main-header__item a.active{
         color:#a49cec;
     }
-.main{
+main{
     padding: 0 16px;
 }
